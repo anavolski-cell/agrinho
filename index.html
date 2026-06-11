@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agro Forte e Sustentável</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="bg-success text-white text-center py-5">
+    <h1>Agro Forte e Sustentável</h1>
+    <p>Fortalecendo a agricultura com sustentabilidade e tecnologia</p>
+    <a href="#section-data" class="btn btn-light mt-3">Ver Dados</a>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Agro Sustentável</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="about.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="news.html">Notícias</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="section-data" class="container my-5" data-aos="fade-up">
+    <h2 class="text-center mb-4">Indicadores de Sustentabilidade</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <canvas id="chartWater"></canvas>
+      </div>
+      <div class="col-md-6 mb-4">
+        <canvas id="chartSoil"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-5" data-aos="fade-up">
+    <h2 class="text-center mb-4">Práticas Sustentáveis</h2>
+    <div class="row g-4">
+      <div class="col-md-4" data-tilt>
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/rotacao.jpg" class="card-img-top" alt="Rotação de Culturas">
+          <div class="card-body">
+            <h5 class="card-title">Rotação de Culturas</h5>
+            <p class="card-text">Mantém a fertilidade do solo e reduz pragas naturalmente.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-tilt>
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/integracao.jpg" class="card-img-top" alt="Integração">
+          <div class="card-body">
+            <h5 class="card-title">Integração Lavoura-Pecuária-Floresta</h5>
+            <p class="card-text">Combina produção e preservação ambiental de forma eficiente.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-tilt>
+        <div class="card h-100 shadow-sm">
+          <img src="assets/images/agua.jpg" class="card-img-top" alt="Uso da Água">
+          <div class="card-body">
+            <h5 class="card-title">Uso Consciente da Água</h5>
+            <p class="card-text">Tecnologias para irrigação eficiente e economia de recursos hídricos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-4">
+    &copy; 2026 Agro Forte e Sustentável
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    AOS.init();
+    VanillaTilt.init(document.querySelectorAll("[data-tilt]"), { max: 15, speed: 400 });
+  </script>
+</body>
+</html>
